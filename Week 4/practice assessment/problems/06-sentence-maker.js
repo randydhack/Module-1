@@ -17,18 +17,17 @@ const sentenceMaker = (...strings) => {
 	let str = '';
 
 	for (let i = 0; i < strings.length; i++) {
-		let word = strings[i];
+		let el = strings[i];
+		let notAnIndex = strings[i + 1];
 
-		if (strings[i + 1] === undefined) {
-			str += word + '!';
+		if (notAnIndex === undefined) {
+			str += el + '!';
 		} else {
-			str +=  word + ' ';
+			str += el + ' ';
 		}
 	}
-	return str;
+	return str
 }
-
-
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

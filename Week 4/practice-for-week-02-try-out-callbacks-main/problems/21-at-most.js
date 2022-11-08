@@ -30,7 +30,6 @@ function atMost(array, max, cb) {
       count++;
     }
   }
-  console.log(count, max);
   return count <= max;
 
   // array.forEach(el => { if (cb(el)) { count++; } });

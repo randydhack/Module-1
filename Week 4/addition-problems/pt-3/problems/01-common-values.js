@@ -28,7 +28,7 @@ function commonValues(obj1, obj2) {
 
         for (let j = 0; j < value2.length; j++) {
 
-            if (value1[i] === value2[j]) {
+            if (value1[i] === (value2[j])) {
                 arr.push(value1[i])
             }
         }

@@ -21,11 +21,12 @@ console.log(clothesList); // ['tshirt', 'pants']
 
 function shoppingList(list) {
 
-    return function(item) {
-        list.push(item);
+    const inner = (n) => {
+
+        list.push(n);
         return list;
     }
-
+    return inner
 }
 
 

@@ -23,12 +23,9 @@ filterUserProfiles(facebookUsers, (user) => user.state === "New York"); // ["Mik
 function filterUserProfiles(users, filter) {
   let res = [];
 
-  for (let i = 0; i < users.length; i++) {
-    let obj = users[i];
-    let name = obj.name;
-
-    if (filter(obj)) {
-      res.push(name);
+  for (let key in users) {
+    if (filter(users[key])) {  //grabs the entire obj list
+      res.push(users[key].name); // grabs user's obj's key -> name
     }
 
   }

@@ -15,20 +15,18 @@ You may not use Array's `map()`, `filter()`, or `forEach()` methods.
 ***********************************************************************/
 
 function pickyMyMap(arr, cb) {
+	let res = [];
 
-	let newArr = [];
-
-	for (let i = 0 ; i < arr.length; i++) {
+	for (let i = 0; i < arr.length; i++) {
 		let el = arr[i];
-		let isTruth = cb(el);
+		let isTrue = cb(el);
 
-		if (isTruth) {
-			newArr.push(isTruth);
+		if (isTrue) {
+			res.push(isTrue);
 		}
 	}
-	return newArr;
+	return res;
 }
-
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
