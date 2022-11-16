@@ -25,6 +25,8 @@ setSecondsTimeout(function () {
 
 function setSecondsTimeout(cb, delayInSeconds) {
 
+  setTimeout(cb, delayInSeconds * 1000)
+
 }
 setSecondsTimeout(function () {
   console.log('hello');
